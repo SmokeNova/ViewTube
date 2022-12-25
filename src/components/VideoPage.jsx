@@ -5,7 +5,7 @@ import { Stack, Box, Typography } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 import { fetchFromAPI } from '../utils/fetchFromAPI';
 import { Videos } from './';
-import { demoThumbnailUrl, demoVideoUrl, demoVideoTitle, demoChannelUrl, demoChannelTitle } from '../utils/constants';
+import {demoVideoTitle,demoChannelTitle } from '../utils/constants';
 
 const VideoPage = () => {
   const [videos, setVideos] = useState([]);

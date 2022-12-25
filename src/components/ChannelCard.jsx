@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { Box, Card, CardMedia, CardContent, Typography } from '@mui/material';
+import { Box, CardMedia, CardContent, Typography } from '@mui/material';
 import { CheckCircle } from "@mui/icons-material";
-import { demoThumbnailUrl, demoVideoUrl, demoVideoTitle, demoChannelUrl, demoChannelTitle } from '../utils/constants';
+import { demoChannelTitle } from '../utils/constants';
 import { demoProfilePicture } from "../utils/constants";
 
 const ChannelCard = ({ channelDetail: { id: { channelId }, snippet } }) => {
