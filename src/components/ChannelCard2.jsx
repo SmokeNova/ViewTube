@@ -11,7 +11,7 @@ const ChannelCard = ({ channelDetail: { id, snippet, statistics } }) => {
                 <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <CardMedia component="img" image={snippet?.thumbnails?.high?.url || demoProfilePicture} alt={snippet?.title} sx={{ width: { xs: '98vw', md: '200px' }, display: 'flex', height: '200px', borderRadius: '50%', mb: 3 }}></CardMedia>
                     <Typography fontWeight='bold' variant="subtitle2" sx={{ opacity: '0.4', color: 'white' }}>
-                        <span>{snippet?.title || demoChannelTitle}</span>
+                        <span>{snippet.title}</span>
                         <CheckCircle sx={{ fontSize: '16px', ml: 1, pt: '1px' }} />
                     </Typography>
                     <Typography fontWeight='bold' variant="subtitle2" sx={{ opacity: '0.4', color: 'white' }}>
